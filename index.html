@@ -53,7 +53,7 @@
                     volcan = volcan["properties"]
                     folium.Marker(
                         [volcan['latitude'], volcan['longitude']],
-                        popup=f"<h5>{volcan['VolcanoName']}</h5><br><a target='_blank' href='{volcan['bulletins'][0]['file']}'>Boletin</a>",
+                        popup=f" {volcan['VolcanoName']}",
                         icon=folium.Icon(color='red', icon='info-sign')
                     ).add_to(mapa)
                 elif volcan['type'] == 'earthquake':
@@ -61,7 +61,7 @@
                     volcan['longitude'] = volcan['geometry']['coordinates'][1]
                     folium.Marker(
                         [volcan['latitude'], volcan['longitude']],
-                        popup=f"<h5>{volcan['properties']['place']}</h5><br><b>{volcan['properties']['mag']}</b>",
+                        popup=f"{volcan['properties']['place']} {volcan['properties']['mag']} ",
                         icon=folium.Icon(color='blue', icon='info-sign')
                     ).add_to(mapa)
                     
