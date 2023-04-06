@@ -33,6 +33,8 @@ volcanes =notifications_list[1]["properties"]
 # Crear el mapa
 mapa = folium.Map(location=[notifications_list[1]["properties"]["latitude"], notifications_list[1]["properties"]["longitude"]], zoom_start=8)
 
+activityDict = { 1:['red', 'Rojo'], 2:['orange','Naranja'], 3:['yellow','Amarillo'], 4:['green', 'verde'] }
+
 #%%
 # Añadir marcadores de los volcanes
 for volcan in notifications_list:
@@ -40,8 +42,8 @@ for volcan in notifications_list:
         volcan = volcan["properties"]
         folium.Marker(
             [volcan['latitude'], volcan['longitude']],
-            popup=f"<h5>{volcan['VolcanoName']}</h5><br><a target='_blank' href='{volcan['bulletins'][0]['file']}'>Boletin</a>",
-            icon=folium.Icon(color='red', icon='info-sign')
+            popup=f"<h5>{volcan['VolcanoName']}</h5><br><b>Nivel:</b>{activityDict[volcan['activityLevel']][1]}<br><b>Nivel2: </b>{volcan['activityLevel']}<br><a target='_blank' href='{volcan['bulletins'][0]['file']}'>Boletin</a>",
+            icon=folium.Icon(color=activityDict[volcan['activityLevel']][0], icon='info-sign')
         ).add_to(mapa)
     elif volcan['type'] == 'earthquake':
         volcan['latitude'] = volcan['geometry']['coordinates'][0]
