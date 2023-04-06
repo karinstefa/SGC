@@ -6,7 +6,7 @@
     </head>
     <body>
         <py-config>
-            packages = ["numpy", "pandas", "folium", "requests"]
+            packages = ["numpy", "pandas", "folium", "requests", "urllib3"]
         </py-config>
 
         <py-script>
@@ -14,10 +14,14 @@
             import numpy as np 
             import requests
             import json            
-            
+            from urllib3.exceptions import InsecureRequestWarning
+            from urllib3 import disable_warnings
+
+            disable_warnings(InsecureRequestWarning)
+
             #%% read URL
             url = "https://archive.sgc.gov.co/feed/v1.0/notifications/notifications.json"
-            response = requests.get(url)
+            response = requests.get(url, verify=False)
             json_data = json.loads(response.content)
             
             # %%
