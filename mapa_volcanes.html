@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0855ea4fb0cb4ad131cc67e09769c357 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0855ea4fb0cb4ad131cc67e09769c357" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0855ea4fb0cb4ad131cc67e09769c357 = L.map(
+                "map_0855ea4fb0cb4ad131cc67e09769c357",
+                {
+                    center: [2.313, -76.395],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3f0abce947588376dcd9b90324a1ad5c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var marker_2d4d5177f2ca26ed553eba458a7e06fe = L.marker(
+                [2.924, -76.029],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_38138bf47055339db0325c0b0b01b322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d4d5177f2ca26ed553eba458a7e06fe.setIcon(icon_38138bf47055339db0325c0b0b01b322);
+        
+    
+        var popup_b0e6a8325bc52b6510772316f46fd0cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f203874d84b064a302e0e74a98d0c872 = $(`<div id="html_f203874d84b064a302e0e74a98d0c872" style="width: 100.0%; height: 100.0%;"><h5>Volcán Nevado del Huila</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Nevado_del_Huila_del_3_de_abril_de_2023.pdf'>Boletin</a></div>`)[0];
+                popup_b0e6a8325bc52b6510772316f46fd0cb.setContent(html_f203874d84b064a302e0e74a98d0c872);
+            
+        
+
+        marker_2d4d5177f2ca26ed553eba458a7e06fe.bindPopup(popup_b0e6a8325bc52b6510772316f46fd0cb)
+        ;
+
+        
+    
+    
+            var marker_26d6b31e0a88892418dcdc5f9e0c31c8 = L.marker(
+                [2.313, -76.395],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_497847f96c2bf6da0e9ea6eb6d49317d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26d6b31e0a88892418dcdc5f9e0c31c8.setIcon(icon_497847f96c2bf6da0e9ea6eb6d49317d);
+        
+    
+        var popup_cc2e442a7568af6830e6e495f973e024 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b5453f71e55a20af23b8d57e7bdc63c = $(`<div id="html_5b5453f71e55a20af23b8d57e7bdc63c" style="width: 100.0%; height: 100.0%;"><h5>Volcán Puracé</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_de_volcan_Purace-Coconucos_del__3_de_abril_de_2023.pdf'>Boletin</a></div>`)[0];
+                popup_cc2e442a7568af6830e6e495f973e024.setContent(html_5b5453f71e55a20af23b8d57e7bdc63c);
+            
+        
+
+        marker_26d6b31e0a88892418dcdc5f9e0c31c8.bindPopup(popup_cc2e442a7568af6830e6e495f973e024)
+        ;
+
+        
+    
+    
+            var marker_e90d9050444cc86048379acdf1f2638a = L.marker(
+                [2.107, -76.591],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_11987c5904bab7e2760639ec7b074379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e90d9050444cc86048379acdf1f2638a.setIcon(icon_11987c5904bab7e2760639ec7b074379);
+        
+    
+        var popup_92aafa6458598f06a2d06a7a72c0a5c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f39ee48c453fe4b9ff3b50e3c4bd268 = $(`<div id="html_0f39ee48c453fe4b9ff3b50e3c4bd268" style="width: 100.0%; height: 100.0%;"><h5>Volcán Sotará</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Sotara_del_28_de_marzo_al_3_de_abril_de_2023.pdf'>Boletin</a></div>`)[0];
+                popup_92aafa6458598f06a2d06a7a72c0a5c1.setContent(html_0f39ee48c453fe4b9ff3b50e3c4bd268);
+            
+        
+
+        marker_e90d9050444cc86048379acdf1f2638a.bindPopup(popup_92aafa6458598f06a2d06a7a72c0a5c1)
+        ;
+
+        
+    
+    
+            var marker_2396331c946b7601265901d160d3a928 = L.marker(
+                [0.83137, -77.96775],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_6b53b1d7e8755298892ee8170ac53c9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2396331c946b7601265901d160d3a928.setIcon(icon_6b53b1d7e8755298892ee8170ac53c9d);
+        
+    
+        var popup_208b7ad5a58b6c151df75b9d6b7bfc5c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7e0a68be0d96795e794e18b3c759ab8 = $(`<div id="html_f7e0a68be0d96795e794e18b3c759ab8" style="width: 100.0%; height: 100.0%;"><h5>Volcán Cerro Negro</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Chiles_Cerro_Negro_04_abril_2023.pdf'>Boletin</a></div>`)[0];
+                popup_208b7ad5a58b6c151df75b9d6b7bfc5c.setContent(html_f7e0a68be0d96795e794e18b3c759ab8);
+            
+        
+
+        marker_2396331c946b7601265901d160d3a928.bindPopup(popup_208b7ad5a58b6c151df75b9d6b7bfc5c)
+        ;
+
+        
+    
+    
+            var marker_0e8a6a8b7c5759932c945cc3217ff067 = L.marker(
+                [0.81653, -77.93625],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_ac2926f2fa2617cb59382cd002ad5150 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0e8a6a8b7c5759932c945cc3217ff067.setIcon(icon_ac2926f2fa2617cb59382cd002ad5150);
+        
+    
+        var popup_39bc6ce6299960f9ddcab28dd3581dcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f883a0ab939ea122dd7596e5cc5d2c3 = $(`<div id="html_4f883a0ab939ea122dd7596e5cc5d2c3" style="width: 100.0%; height: 100.0%;"><h5>Volcán Chiles</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Chiles_Cerro_Negro_04_abril_2023_zXzuvy1.pdf'>Boletin</a></div>`)[0];
+                popup_39bc6ce6299960f9ddcab28dd3581dcd.setContent(html_4f883a0ab939ea122dd7596e5cc5d2c3);
+            
+        
+
+        marker_0e8a6a8b7c5759932c945cc3217ff067.bindPopup(popup_39bc6ce6299960f9ddcab28dd3581dcd)
+        ;
+
+        
+    
+    
+            var marker_24f293b223eb71e85b72dc87cac5b639 = L.marker(
+                [0.956, -77.885],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_73736b0bf6dfa769b03c1f82df2af206 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24f293b223eb71e85b72dc87cac5b639.setIcon(icon_73736b0bf6dfa769b03c1f82df2af206);
+        
+    
+        var popup_48f1194e1544bbad5d1b8a1c61dd9c1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc121364ad7e24cb6db9ff81e59570dc = $(`<div id="html_bc121364ad7e24cb6db9ff81e59570dc" style="width: 100.0%; height: 100.0%;"><h5>Volcán Cumbal</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Cumbal_04_abril_2023.pdf'>Boletin</a></div>`)[0];
+                popup_48f1194e1544bbad5d1b8a1c61dd9c1a.setContent(html_bc121364ad7e24cb6db9ff81e59570dc);
+            
+        
+
+        marker_24f293b223eb71e85b72dc87cac5b639.bindPopup(popup_48f1194e1544bbad5d1b8a1c61dd9c1a)
+        ;
+
+        
+    
+    
+            var marker_e07179dd37a5d72f3d63446779f76c91 = L.marker(
+                [1.221, -77.359],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_b9274a887b2d61d76bfa06e61a158bf7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e07179dd37a5d72f3d63446779f76c91.setIcon(icon_b9274a887b2d61d76bfa06e61a158bf7);
+        
+    
+        var popup_24a0e8da7c3f80a633fb7864835f5de0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2cc48161f9b47299fd6b2cea8c88f87 = $(`<div id="html_d2cc48161f9b47299fd6b2cea8c88f87" style="width: 100.0%; height: 100.0%;"><h5>Volcán Galeras</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_volcan_Galeras_04_abr_2023.pdf'>Boletin</a></div>`)[0];
+                popup_24a0e8da7c3f80a633fb7864835f5de0.setContent(html_d2cc48161f9b47299fd6b2cea8c88f87);
+            
+        
+
+        marker_e07179dd37a5d72f3d63446779f76c91.bindPopup(popup_24a0e8da7c3f80a633fb7864835f5de0)
+        ;
+
+        
+    
+    
+            var marker_cad33e7a3c422004c129a64a68d4b8b3 = L.marker(
+                [5.091, -75.292],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_c26467be025792c566ecbead1ab0f2eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cad33e7a3c422004c129a64a68d4b8b3.setIcon(icon_c26467be025792c566ecbead1ab0f2eb);
+        
+    
+        var popup_e18c7a8f937bd22e3751d69215328bed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04c53aa8133c5cbe3c0218a71ef04c40 = $(`<div id="html_04c53aa8133c5cbe3c0218a71ef04c40" style="width: 100.0%; height: 100.0%;"><h5>Volcán Cerro Bravo</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_extraordinario_Volcan_Nevado_del_Ruiz.pdf'>Boletin</a></div>`)[0];
+                popup_e18c7a8f937bd22e3751d69215328bed.setContent(html_04c53aa8133c5cbe3c0218a71ef04c40);
+            
+        
+
+        marker_cad33e7a3c422004c129a64a68d4b8b3.bindPopup(popup_e18c7a8f937bd22e3751d69215328bed)
+        ;
+
+        
+    
+    
+            var marker_65a4d9a351c9575fccab055fdbcc98e1 = L.marker(
+                [4.487, -75.386],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_a8531b4c9a315347313f7015cc431ac4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65a4d9a351c9575fccab055fdbcc98e1.setIcon(icon_a8531b4c9a315347313f7015cc431ac4);
+        
+    
+        var popup_fd896a4af63e9dab11af06c78dd57be9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_937d379d83a52f11243d54697526f875 = $(`<div id="html_937d379d83a52f11243d54697526f875" style="width: 100.0%; height: 100.0%;"><h5>Volcán Cerro Machín</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_semanal_del_volcan_Cerro_Machin_03_de_abril_de_2023.pdf'>Boletin</a></div>`)[0];
+                popup_fd896a4af63e9dab11af06c78dd57be9.setContent(html_937d379d83a52f11243d54697526f875);
+            
+        
+
+        marker_65a4d9a351c9575fccab055fdbcc98e1.bindPopup(popup_fd896a4af63e9dab11af06c78dd57be9)
+        ;
+
+        
+    
+    
+            var marker_c4a18a41ff80b7f2bb88ae0cc5d98768 = L.marker(
+                [4.895, -75.321],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_2b1c116de0b4201e229b1b5d1b908c21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4a18a41ff80b7f2bb88ae0cc5d98768.setIcon(icon_2b1c116de0b4201e229b1b5d1b908c21);
+        
+    
+        var popup_f194b8ac324eff3e1df3ff86de262bce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dae82ee7792d60fc056ec7cfeb64e524 = $(`<div id="html_dae82ee7792d60fc056ec7cfeb64e524" style="width: 100.0%; height: 100.0%;"><h5>Volcán Nevado del Ruiz</h5><br><a target='_blank' href='https://saeadmin.sgc.gov.co/media/bulletin/Boletin_extra_volcan_Nevado_del_Ruiz_06_de_abril_0930.pdf'>Boletin</a></div>`)[0];
+                popup_f194b8ac324eff3e1df3ff86de262bce.setContent(html_dae82ee7792d60fc056ec7cfeb64e524);
+            
+        
+
+        marker_c4a18a41ff80b7f2bb88ae0cc5d98768.bindPopup(popup_f194b8ac324eff3e1df3ff86de262bce)
+        ;
+
+        
+    
+    
+            var marker_c53a6d582f92ea75bb8faa2d2b379613 = L.marker(
+                [15.99983406, -94.39559174],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_a4ce1e6af61f4065cd2c9fefc676bd43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c53a6d582f92ea75bb8faa2d2b379613.setIcon(icon_a4ce1e6af61f4065cd2c9fefc676bd43);
+        
+    
+        var popup_c7bb6e906e04bd704538de0af252f521 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9118cfa6ab2909a2fdab210b1cc4e1c0 = $(`<div id="html_9118cfa6ab2909a2fdab210b1cc4e1c0" style="width: 100.0%; height: 100.0%;"><h5>Cerca de la Costa de Oaxaca, Mexico</h5><br><b>4.9</b></div>`)[0];
+                popup_c7bb6e906e04bd704538de0af252f521.setContent(html_9118cfa6ab2909a2fdab210b1cc4e1c0);
+            
+        
+
+        marker_c53a6d582f92ea75bb8faa2d2b379613.bindPopup(popup_c7bb6e906e04bd704538de0af252f521)
+        ;
+
+        
+    
+    
+            var marker_9b63b49363908e14c7f4efd3810a5bb2 = L.marker(
+                [6.959940329, -76.35805072],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_2b6fcf8dbae34338df85cc0ab05d432f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b63b49363908e14c7f4efd3810a5bb2.setIcon(icon_2b6fcf8dbae34338df85cc0ab05d432f);
+        
+    
+        var popup_eec2839bddf3c2a2099018628ed8f6e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c52e22626303d359bb35cfffce131062 = $(`<div id="html_c52e22626303d359bb35cfffce131062" style="width: 100.0%; height: 100.0%;"><h5>Dabeiba - Antioquia, Colombia</h5><br><b>2.4</b></div>`)[0];
+                popup_eec2839bddf3c2a2099018628ed8f6e9.setContent(html_c52e22626303d359bb35cfffce131062);
+            
+        
+
+        marker_9b63b49363908e14c7f4efd3810a5bb2.bindPopup(popup_eec2839bddf3c2a2099018628ed8f6e9)
+        ;
+
+        
+    
+    
+            var marker_a7be3557b579ae234ff7f2813ba58243 = L.marker(
+                [6.783200162, -73.16708617],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_0eabd6a2d4b336bca2785ab12e5ec50d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a7be3557b579ae234ff7f2813ba58243.setIcon(icon_0eabd6a2d4b336bca2785ab12e5ec50d);
+        
+    
+        var popup_c8689714dfd897c1fe11d9fc4eb5c45d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8752183454e16283ef4bbe41d2d887cb = $(`<div id="html_8752183454e16283ef4bbe41d2d887cb" style="width: 100.0%; height: 100.0%;"><h5>Los Santos - Santander, Colombia</h5><br><b>2.5</b></div>`)[0];
+                popup_c8689714dfd897c1fe11d9fc4eb5c45d.setContent(html_8752183454e16283ef4bbe41d2d887cb);
+            
+        
+
+        marker_a7be3557b579ae234ff7f2813ba58243.bindPopup(popup_c8689714dfd897c1fe11d9fc4eb5c45d)
+        ;
+
+        
+    
+    
+            var marker_b7f59108fab2f914cf66ec19e55b76e8 = L.marker(
+                [11.65, -85.794],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_61c0df565f3f333f98e50fdd31730f49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7f59108fab2f914cf66ec19e55b76e8.setIcon(icon_61c0df565f3f333f98e50fdd31730f49);
+        
+    
+        var popup_23848e2b7db5e34627cd25adbbc5e54f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63da624c9d68217c60fba2646920113c = $(`<div id="html_63da624c9d68217c60fba2646920113c" style="width: 100.0%; height: 100.0%;"><h5>Moyogalpa, Nicaragua</h5><br><b>5.1</b></div>`)[0];
+                popup_23848e2b7db5e34627cd25adbbc5e54f.setContent(html_63da624c9d68217c60fba2646920113c);
+            
+        
+
+        marker_b7f59108fab2f914cf66ec19e55b76e8.bindPopup(popup_23848e2b7db5e34627cd25adbbc5e54f)
+        ;
+
+        
+    
+    
+            var marker_f4691d6dfdc7c330bc2d7392a8c595c3 = L.marker(
+                [0.7988333333, -77.92933333],
+                {}
+            ).addTo(map_0855ea4fb0cb4ad131cc67e09769c357);
+        
+    
+            var icon_321d494d1e33d2023ab5e60546570edf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4691d6dfdc7c330bc2d7392a8c595c3.setIcon(icon_321d494d1e33d2023ab5e60546570edf);
+        
+    
+        var popup_b00ef2bc9018a5a68455e48a2bbbae06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_959e6732b1af020bc501032280fc842d = $(`<div id="html_959e6732b1af020bc501032280fc842d" style="width: 100.0%; height: 100.0%;"><h5>Tufiño - Carchi, Ecuador, Colombia - Area de Influencia Complejo Volcanico Chiles - Cerro Negro</h5><br><b>3.2</b></div>`)[0];
+                popup_b00ef2bc9018a5a68455e48a2bbbae06.setContent(html_959e6732b1af020bc501032280fc842d);
+            
+        
+
+        marker_f4691d6dfdc7c330bc2d7392a8c595c3.bindPopup(popup_b00ef2bc9018a5a68455e48a2bbbae06)
+        ;
+
+        
+    
+</script>
+</html>
